@@ -6,6 +6,7 @@ const scontoMinorenni = 0.8;
 const scontoAnziani = 0.6;
 let prezzoBiglietto = percorsoKm * prezzoKm;
 
+// struttura con if per sapere quando applicare scontistica
 if (etaPasseggero < 18) {
     prezzoBiglietto = prezzoBiglietto * scontoMinorenni;
     prezzoBiglietto = prezzoBiglietto.toFixed(2);
