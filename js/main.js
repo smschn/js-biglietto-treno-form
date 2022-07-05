@@ -3,10 +3,21 @@ const prezzoKm = 0.21;
 const scontoMinorenni = 0.8;
 const scontoAnziani = 0.6;
 
-const nameDom = document.getElementById('name');
-const distanceDom = document.getElementById('distance');
-const ageDom = document.getElementById('age');
+let nameDom = document.getElementById('name');
+let distanceDom = document.getElementById('distance');
+let ageDom = document.getElementById('age');
 
+
+
+
+
+
+
+
+
+
+
+/* 
 let prezzoBiglietto = percorsoKm * prezzoKm;
 
 // struttura con if per sapere quando applicare scontistica
@@ -23,6 +34,5 @@ if (etaPasseggero < 18) {
     alert('Il prezzo del biglietto è ' + prezzoBiglietto + ' € (nessuno sconto applicato)');
 }
 
-
-
 // debug
+ */
