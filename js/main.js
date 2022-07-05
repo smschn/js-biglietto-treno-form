@@ -12,7 +12,6 @@ let nomePasseggero = document.getElementById('nome-passeggero');
 let offerType = document.getElementById('offerta');
 let carrozza = document.getElementById('carrozza');
 let codicePren = document.getElementById('codice_p');
-
 let costoBiglietto = document.getElementById('costo');
 
 // cosa succede al click del bottone
@@ -33,7 +32,7 @@ function() {
         } else {
             offerType.innerHTML = 'Biglietto standard';
         }
-        
+
         // far apparire numero carrozza - tra 1 e 20
         carrozza.innerHTML = Math.floor(Math.random() * 20 + 1);
 
