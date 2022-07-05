@@ -1,11 +1,13 @@
 // dichiarazione e assegnazione variabili
 const prezzoKm = 0.21;
 
+// dati in input
 let name = document.getElementById('name');
 let distance = document.getElementById('distance');
 let fasciaEta = document.getElementById('age_list');
 let button = document.getElementById('genera');
 
+// dati in output
 let nomePasseggero = document.getElementById('nome-passeggero');
 let offerType = document.getElementById('offerta');
 let carrozza = document.getElementById('carrozza');
@@ -31,6 +33,7 @@ function() {
         } else {
             offerType.innerHTML = 'Biglietto standard';
         }
+        
         // far apparire numero carrozza - tra 1 e 20
         carrozza.innerHTML = Math.floor(Math.random() * 20 + 1);
 
@@ -42,7 +45,15 @@ function() {
         let costoScontatoMinorenne;
         let costoScontatoAnziano;
 
-        
+        if (fasciaEta.value == "minorenne") {
+            costoScontatoMinorenne = costoTot * 0.8;
+            costoBiglietto.innerHTML = costoScontatoMinorenne.toFixed(2) + " €";
+        } else if (fasciaEta.value == "anziano") {
+            costoScontatoAnziano = costoTot * 0.6;
+            costoBiglietto.innerHTML = costoScontatoAnziano.toFixed(2) + " €";
+        } else if (fasciaEta.value == "maggiorenne") {
+            costoBiglietto.innerHTML = costoTot.toFixed(2) + " €";
+        }
 
     }
 })
