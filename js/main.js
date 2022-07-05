@@ -11,7 +11,7 @@ function() {
     let nameDom = document.getElementById('name');
     let distanceDom = document.getElementById('distance');
     let ageDom = document.getElementById('age');
-    alert('I valori inseriti sono: ' + nameDom.value + ', ' + distanceDom.value + ' e ' + ageDom.value);
+    console.log('I valori inseriti sono: ' + nameDom.value + ', ' + distanceDom.value + ' e ' + ageDom.value);
 })
 
 
