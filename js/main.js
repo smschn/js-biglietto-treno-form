@@ -10,6 +10,7 @@ let nomePasseggero = document.getElementById('nome-passeggero');
 let offerType = document.getElementById('offerta');
 let carrozza = document.getElementById('carrozza');
 let codicePren = document.getElementById('codice_p');
+
 let costoBiglietto = document.getElementById('costo');
 
 // cosa succede al click del bottone
@@ -21,41 +22,27 @@ function() {
         alert('Attenzione: devi selezionare tutti i parametri.')
     } else {
 
-        // far apparire nome passeggero
+        // far apparire il nome del passeggero
         nomePasseggero.innerHTML = name.value;
 
-        // far apparire tipo offerta
-        if (fasciaEta.value = 'minorenne') {
-            offerType.innerHTML = 'Biglietto ridotto';
-        } else if (fasciaEta.value = 'anziano') {
+        // far apparire il tipo di offerta
+        if (fasciaEta.value == "minorenne" || fasciaEta.value == "anziano" ) {
             offerType.innerHTML = 'Biglietto ridotto';
         } else {
             offerType.innerHTML = 'Biglietto standard';
         }
-
-        // far apparire numero carrozza - tra 1 e 10
-        carrozza.innerHTML = Math.floor(Math.random() * 10 + 1);
+        // far apparire numero carrozza - tra 1 e 20
+        carrozza.innerHTML = Math.floor(Math.random() * 20 + 1);
 
         // far apparire codice prenotazione - tra 1 e 1000
         codicePren.innerHTML = Math.floor(Math.random() * 1000 + 1);
 
-        // far apparire costo biglietto
+        // far apparire il costo del biglietto
+        let costoTot = prezzoKm * distance.value;
+        let costoScontatoMinorenne;
+        let costoScontatoAnziano;
 
+        
 
-// debug
-
-/*
-const prezzoKm = 0.21;
-
-let name = document.getElementById('name');
-let distance = document.getElementById('number');
-let nomePasseggero = document.getElementById('nome-passeggero');
-let fasciaEta = document.getElementById('fascia-eta');
-let tipoOfferta = document.getElementById('offerta');
-let carrozza = document.getElementById('carrozza');
-let cp = document.getElementById('codice-cp');
-let costoTotale = document.getElementById('costo');
-let annulla = document.getElementById('annulla');
-let button = document.getElementById('genera');
-
-*/
+    }
+})
