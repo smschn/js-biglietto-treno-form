@@ -1,4 +1,4 @@
-// dichiarazione e assegnazione variabili
+// costante
 const prezzoKm = 0.21;
 
 // dati in input
@@ -14,7 +14,7 @@ let carrozza = document.getElementById('carrozza');
 let codicePren = document.getElementById('codice_p');
 let costoBiglietto = document.getElementById('costo');
 
-// cosa succede al click del bottone
+// cliccando 'inserisci', si compila la sezione 'il tuo biglietto'
 button.addEventListener('click',
 function() {
 
@@ -57,7 +57,7 @@ function() {
     }
 })
 
-// cosa succede al click di annulla
+// cliccando annulla, la pagina viene ricaricata
 let buttonAnnulla = document.getElementById('annulla');
 buttonAnnulla.addEventListener('click',
 function() {
