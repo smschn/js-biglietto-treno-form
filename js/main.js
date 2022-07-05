@@ -8,6 +8,9 @@ let button = document.getElementById('genera');
 
 let nomePasseggero = document.getElementById('nome-passeggero');
 let offerType = document.getElementById('offerta');
+let carrozza = document.getElementById('carrozza');
+let codicePren = document.getElementById('codice_p');
+let costoBiglietto = document.getElementById('costo');
 
 // cosa succede al click del bottone
 button.addEventListener('click',
@@ -31,13 +34,13 @@ function() {
         }
 
         // far apparire numero carrozza
+        carrozza.innerHTML = Math.floor(Math.random() * 10 + 1);
 
         // far apparire codice cp
+        codicePren.innerHTML = Math.floor(Math.random() * 1000 + 1);
 
         // far apparire costo biglietto
-        
-    }
-})
+
 
 // debug
 
