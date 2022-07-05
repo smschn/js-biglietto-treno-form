@@ -57,9 +57,14 @@ function() {
     }
 })
 
-// cliccando annulla, la pagina viene ricaricata
+// cliccando 'annulla', la pagina viene ricaricata
 let buttonAnnulla = document.getElementById('annulla');
 buttonAnnulla.addEventListener('click',
 function() {
-    window.location.reload();
+   // window.location.reload(); ---> metodo facile: al click di 'annulla', la pagina si ricarica (non servirebbero le istruzioni seguenti)
+   nomePasseggero.innerHTML = "...";
+   offerType.innerHTML = "...";
+   carrozza.innerHTML = "...";
+   codicePren.innerHTML = "...";
+   costoBiglietto.innerHTML = "...";
 })
