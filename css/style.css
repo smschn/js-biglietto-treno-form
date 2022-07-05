@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 
+section {
+    padding: 50px;
+}
+
+section * {
+    padding: 10px;
+}
+
 h1 {
-    text-align: center;
     text-transform: uppercase;
 }
