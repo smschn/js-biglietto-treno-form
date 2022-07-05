@@ -33,10 +33,10 @@ function() {
             offerType.innerHTML = 'Biglietto standard';
         }
 
-        // far apparire numero carrozza
+        // far apparire numero carrozza - tra 1 e 10
         carrozza.innerHTML = Math.floor(Math.random() * 10 + 1);
 
-        // far apparire codice cp
+        // far apparire codice prenotazione - tra 1 e 1000
         codicePren.innerHTML = Math.floor(Math.random() * 1000 + 1);
 
         // far apparire costo biglietto
