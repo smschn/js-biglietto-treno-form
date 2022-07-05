@@ -9,27 +9,54 @@
 </head>
 <body>
     
-    <section>
+    <section id="input">
         <h1>calcola il prezzo del tuo biglietto</h1>
-        <label for="name">Inserisci il tuo nome</label>
-        <input id="name" type="text" placeholder="nome" for="name">
+
+        <label for="nome">Inserisci il tuo nome</label>
+        <input id="name" type="text" placeholder="nome" for="nome">
+
         <br>
         <br>
-        <label for="distance">Inserisci i km da percorrere</label>
-        <input id="distance" type="number" placeholder="000" for="distance">
+
+        <label for="distanza">Inserisci i km da percorrere</label>
+        <input id="distance" type="number" placeholder="000" for="distanza">
+
         <br>
         <br>
-        <label for="age">Inserisci la fascia d'età</label>
-        <select id="age" for="age">
+
+        <label for="lista">Inserisci la fascia d'età</label>
+        <select id="age_list" for="lista">
             <option value="">Scegli un'opzione</option>
             <option value="minorenne">Minorenne</option>
             <option value="maggiorenne">Maggiorenne</option>
             <option value="anziano">Over 65</option>
         </select>
+
         <br>
         <br>
+
         <label for="age">Inserisci i dati</label>
-        <input id="input_data" type="submit" value="Inserisci">
+        <input id="genera" type="submit" value="Inserisci">
+    </section>
+
+    <section id="output">
+        <h1>il tuo biglietto</h1>
+        <h3>dettaglio passeggeri</h3>
+
+        <h4>nome passeggero</h3>
+        <h5 id="nome-passeggero"></h4>
+
+        <h5>Offerta</h5>
+        <p id="offerta"></p>
+
+        <h5>Carrozza</h5>
+        <p id="carrozza"></p>
+
+        <h5>Codice CP</h5>
+        <p id="codice-cp"></p>
+
+        <h5>Costo Biglietto</h5>
+        <p id="costo"></p>
     </section>
 
     <script type="text/javascript" src="js/main.js"></script>

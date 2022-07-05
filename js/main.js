@@ -1,35 +1,36 @@
 // dichiarazione e assegnazione variabili
 const prezzoKm = 0.21;
-const scontoMinorenni = 0.8;
-const scontoAnziani = 0.6;
-let prezzoBiglietto;
 
-// recupero valori tramite button e li mostro tramite alert
-const recuperoValoriDom = document.getElementById('input_data');
-recuperoValoriDom.addEventListener('click',
+let name = document.getElementById('name');
+let distance = document.getElementById('distance');
+let fasciaEta = document.getElementById('age_list');
+let button = document.getElementById('genera');
+
+// cosa succede al click del bottone
+button.addEventListener('click',
 function() {
-    let nameDom = document.getElementById('name');
-    let distanceDom = document.getElementById('distance');
-    let ageDom = document.getElementById('age');
-    console.log('I valori inseriti sono: ' + nameDom.value + ', ' + distanceDom.value + ' e ' + ageDom.value);
+    // check inserimento dati
+    if (name.value == "" || distance.value == "" || fasciaEta.value == "") {
+        alert('Attenzione: devi selezionare tutti i parametri.')
+    } else {
+
+    }
 })
 
-
-/* 
-let prezzoBiglietto = percorsoKm * prezzoKm;
-
-// struttura con if per sapere quando applicare scontistica
-if (etaPasseggero < 18) {
-    prezzoBiglietto = prezzoBiglietto * scontoMinorenni;
-    prezzoBiglietto = prezzoBiglietto.toFixed(2);
-    alert('Il prezzo del biglietto è ' + prezzoBiglietto + ' € (applicato sconto minorenne)');
-} else if (etaPasseggero > 65) {
-    prezzoBiglietto = prezzoBiglietto * scontoAnziani;
-    prezzoBiglietto = prezzoBiglietto.toFixed(2);
-    alert('Il prezzo del biglietto è ' + prezzoBiglietto + ' € (applicato sconto over 65)');
-} else {
-    prezzoBiglietto.toFixed(2);
-    alert('Il prezzo del biglietto è ' + prezzoBiglietto + ' € (nessuno sconto applicato)');
-}*/
-
 // debug
+
+/*
+const prezzoKm = 0.21;
+
+let name = document.getElementById('name');
+let distance = document.getElementById('number');
+let nomePasseggero = document.getElementById('nome-passeggero');
+let fasciaEta = document.getElementById('fascia-eta');
+let tipoOfferta = document.getElementById('offerta');
+let carrozza = document.getElementById('carrozza');
+let cp = document.getElementById('codice-cp');
+let costoTotale = document.getElementById('costo');
+let annulla = document.getElementById('annulla');
+let button = document.getElementById('genera');
+
+*/
