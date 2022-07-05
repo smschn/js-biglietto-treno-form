@@ -56,3 +56,10 @@ function() {
 
     }
 })
+
+// cosa succede al click di annulla
+let buttonAnnulla = document.getElementById('annulla');
+buttonAnnulla.addEventListener('click',
+function() {
+    window.location.reload();
+})
