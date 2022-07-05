@@ -1,9 +1,12 @@
 // dichiarazione e assegnazione variabili
-const percorsoKm = parseInt(prompt('Quanti km vuoi percorrere?'));
-const etaPasseggero = parseInt(prompt('Quanti anni hai?'));
 const prezzoKm = 0.21;
 const scontoMinorenni = 0.8;
 const scontoAnziani = 0.6;
+
+const nameDom = document.getElementById('name');
+const distanceDom = document.getElementById('distance');
+const ageDom = document.getElementById('age');
+
 let prezzoBiglietto = percorsoKm * prezzoKm;
 
 // struttura con if per sapere quando applicare scontistica
@@ -20,6 +23,6 @@ if (etaPasseggero < 18) {
     alert('Il prezzo del biglietto è ' + prezzoBiglietto + ' € (nessuno sconto applicato)');
 }
 
+
+
 // debug
-console.log('test')
-console.log('prezzoBiglietto')
