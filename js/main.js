@@ -23,6 +23,10 @@ function() {
         alert('Attenzione: devi selezionare tutti i parametri.')
     } else {
 
+        // rendere visibile il biglietto
+        let bigliettoDom = document.getElementById('output');
+        bigliettoDom.className = 'output_show';
+
         // far apparire il nome del passeggero
         nomePasseggero.innerHTML = name.value;
 
@@ -57,14 +61,19 @@ function() {
     }
 })
 
-// cliccando 'annulla', la pagina viene ricaricata
+// cliccando 'annulla', i campi input si resettano e il biglietto scompare
 let buttonAnnulla = document.getElementById('annulla');
 buttonAnnulla.addEventListener('click',
 function() {
-   // window.location.reload(); ---> metodo facile: al click di 'annulla', la pagina si ricarica (non servirebbero le istruzioni seguenti)
-   nomePasseggero.innerHTML = "...";
-   offerType.innerHTML = "...";
-   carrozza.innerHTML = "...";
-   codicePren.innerHTML = "...";
-   costoBiglietto.innerHTML = "...";
+
+   // window.location.reload(); ---> metodo facile: al click di 'annulla', la pagina si ricarica e i campi input si svuotano (non servirebbero le istruzioni seguenti)
+   
+   // il biglietto viene nascosto
+   let bigliettoDom = document.getElementById('output');
+   bigliettoDom.className = 'output_hide';
+
+   // campi input si resettano
+   distance.value = "";
+   name.value = "";
+   fasciaEta.value = "";
 })

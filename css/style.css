@@ -26,3 +26,11 @@ p {
     width: 50%;
     margin: auto;
 }
+
+.output_hide {
+    display: none;
+}
+
+.output_show {
+    display: block;
+}
