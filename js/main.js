@@ -3,18 +3,15 @@ const prezzoKm = 0.21;
 const scontoMinorenni = 0.8;
 const scontoAnziani = 0.6;
 
-let nameDom = document.getElementById('name');
-let distanceDom = document.getElementById('distance');
-let ageDom = document.getElementById('age');
-
-
-
-
-
-
-
-
-
+// recupero valori tramite button e li mostro tramite alert
+const recuperoValoriDom = document.getElementById('input_data');
+recuperoValoriDom.addEventListener('click',
+function() {
+    const nameDom = document.getElementById('name');
+    const distanceDom = document.getElementById('distance');
+    const ageDom = document.getElementById('age');
+    alert('I valori inseriti sono: ' + nameDom.value + ', ' + distanceDom.value + ' e ' + ageDom.value);
+})
 
 
 /* 
